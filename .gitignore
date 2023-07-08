@@ -1,2 +1,11 @@
-/.bsp/
 target/
+project/project/
+project/target/
+project/metals.sbt
+
+.bloop
+.bsp
+
+.metals
+
+.vscode/

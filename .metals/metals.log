@@ -2107,3 +2107,37 @@ Exception in thread "main" java.lang.IllegalAccessError: class com.sourcegraph.s
 2023.07.05 06:47:18 INFO  Shut down connection with build server.[0m
 2023.07.05 06:47:18 INFO  Shut down connection with build server.[0m
 2023.07.05 06:47:18 INFO  Exiting server[0m
+2023.07.08 22:35:12 INFO  Started: Metals version 0.11.12 in workspace 'C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask' for client Visual Studio Code 1.79.2.[0m
+liep. 08, 2023 10:35:13 POPIET org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+liep. 08, 2023 10:35:13 POPIET org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+liep. 08, 2023 10:35:13 POPIET org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+liep. 08, 2023 10:35:14 POPIET org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\.metals\metals (H2 2.1)
+liep. 08, 2023 10:35:14 POPIET org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.061s)
+liep. 08, 2023 10:35:14 POPIET org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+liep. 08, 2023 10:35:14 POPIET org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.07.08 22:35:15 INFO  time: initialize in 2.4s[0m
+2023.07.08 22:35:22 INFO  Attempting to connect to the build server...[0m
+2023.07.08 22:35:22 INFO  Bloop uses C:\Program Files\Java\jdk-16.0.1 defined at C:\Users\namek\.bloop\bloop.json[0m
+2023.07.08 22:35:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\.metals\bsp.trace.json or C:\Users\namek\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+2023.07.08 22:35:36 INFO  no build target found for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala. Using presentation compiler with project's scala-library version: 3.2.2[0m
+2023.07.08 22:35:36 INFO  Attempting to connect to the build server...[0m
+2023.07.08 22:35:36 INFO  Bloop uses C:\Program Files\Java\jdk-16.0.1 defined at C:\Users\namek\.bloop\bloop.json[0m
+2023.07.08 22:35:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\project\.metals\bsp.trace.json or C:\Users\namek\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+2023.07.08 22:35:36 INFO  time: Connected to build server in 14s[0m
+2023.07.08 22:35:36 INFO  Connected to Build server: Bloop v1.5.6[0m
+2023.07.08 22:35:36 INFO  time: code lens generation in 15s[0m
+2023.07.08 22:35:36 INFO  time: Imported build in 0.49s[0m
+2023.07.08 22:35:56 INFO  time: indexed workspace in 19s[0m
+2023.07.08 22:35:56 WARN  no build target for: C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 22:36:19 INFO  time: code lens generation in 1.93s[0m
+2023.07.08 22:37:45 WARN  no build target for: C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 22:41:57 WARN  no build target for: C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\project\metals.sbt[0m
+liep. 08, 2023 10:43:44 POPIET org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
