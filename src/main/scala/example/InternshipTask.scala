@@ -67,27 +67,22 @@ object InternshipTask {
       val point = location.coordinates
       val area = region.coordinates.head
 
-      def isCoordinatesInArea(x: Double, y: Double): Boolean = {
-        var isInside = false
-        var i = 0
-        var j = area.length - 1
+      println(area)
+      var isInside = false
 
-        while (i < area.length) {
-          val xi = area(i)(0)
-          val yi = area(i)(1)
-          val xj = area(j)(0)
-          val yj = area(j)(1)
+      for (i <- 0 until area.length) {
+        val j = if (i == 0) area.length - 1 else i - 1
 
-          val intersect = ((yi > y) != (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi)
-          if (intersect) isInside = !isInside
+        val xi = area(i)(0)
+        val yi = area(i)(1)
+        val xj = area(j)(0)
+        val yj = area(j)(1)
 
-          j = i
-          i += 1
+        if (((yi > point(1)) != (yj > point(1))) 
+        && (point.head < (xj - xi) * (point(1) - yi) / (yj - yi) + xi)) {
+          isInside = !isInside
         }
-
-        isInside
       }
-
-    isCoordinatesInArea(point.head, point(1))
-  }
+      isInside
+    }
 }
