@@ -1,17 +1,66 @@
 package example
+import scala.io.Source
 import spray.json._
 import DefaultJsonProtocol._
+import java.io.FileWriter
 import org.json4s._
 import org.json4s.native.Serialization
-
+import java.io.FileNotFoundException
 
 class InternshipTaskSpec extends munit.FunSuite {
   test("correctly determine if a location is inside a region") {
     val location = Location("location1", List(25.2105, 54.6405))
-      val region = Region("region1", List(List(List(25.1357, 54.6792), List(25.1561, 54.5847), List(25.2866, 54.5942), List(25.4294, 54.6461), List(25.36416, 54.7710), List(25.1357, 54.7710), List(25.1357, 54.6792))))
+    val region = Region("region1", List(List(List(25.1357, 54.6792), List(25.1561, 54.5847), List(25.2866, 54.5942), List(25.4294, 54.6461), List(25.36416, 54.7710), List(25.1357, 54.7710), List(25.1357, 54.6792))))
 
     assertEquals(InternshipTask.isLocationInRegion(location, region), true)
   }
+
+  test("correctly determine if a location is not inside a region") {
+    val location = Location("location1", List(26.2105, 54.6405))
+    val region = Region("region1", List(List(List(25.1357, 54.6792), List(25.1561, 54.5847), List(25.2866, 54.5942), List(25.4294, 54.6461), List(25.36416, 54.7710), List(25.1357, 54.7710), List(25.1357, 54.6792))))
+    
+    assertEquals(InternshipTask.isLocationInRegion(location, region), true)
+  }
+
+  test("produce correct results when both locations and regions files are empty") {
+    val locationsPath = "empty_locations.json"
+    val regionsPath = "empty_regions.json"
+    val resultsPath = "results.json"
+
+    val expectedResults = List.empty[Results]
+    intercept[FileNotFoundException]{
+      InternshipTask.main(Array(locationsPath, regionsPath, resultsPath))
+    }
+      
+  }
+
+  test("produce correct results when locations file is empty") {
+    val locationsPath = "empty_locations.json"
+    val regionsPath = "regions.json"
+    val resultsPath = "results.json"
+
+    val expectedResults = List(
+      Results("region1", List("location1", "location2")),
+      Results("region2", List("location3", "location4", "location5"))
+    )
+
+    intercept[FileNotFoundException]{
+      InternshipTask.main(Array(locationsPath, regionsPath, resultsPath))
+    }
+  }
+
+  test("produce correct results when regions file is empty") {
+    val locationsPath = "locations.json"
+    val regionsPath = "empty_regions.json"
+    val resultsPath = "results.json"
+
+    val expectedResults = List.empty[Results]
+
+    intercept[FileNotFoundException]{
+      InternshipTask.main(Array(locationsPath, regionsPath, resultsPath))
+    }
+  }
+
   test("produce correct results when matching locations with regions") {
     val locations = List(
       Location("location1", List(25.2105, 54.6405)),
@@ -28,16 +77,27 @@ class InternshipTaskSpec extends munit.FunSuite {
     )
     val expectedResults = List(
       Results("region1", List("location1", "location2")),
-      Results("region2", List("location3", "location4", "location5"))
+      Results("region2", List("location3", "location4", "location5")),
+      Results("region3", List[String]())
     )
-    val matchingLocations = locations.flatMap { location =>
-    regions.find(InternshipTask.isLocationInRegion(location, _)).map(region => (location.name, region.name))
+    val matchingRegions = regions.flatMap { region =>
+    locations.filter(InternshipTask.isLocationInRegion(_, region)).map(location => (region.name, location.name))
+    } 
+
+    val matchedRegions = matchingRegions
+      .groupBy(_._1)
+      .map { case (region, locations) => Results(region, locations.map(_._2)) }
+      .toList
+
+    val emptyRegions = regions.flatMap { region =>
+      if (!matchingRegions.exists(_._1 == region.name)) {
+        Some(Results(region.name, List[String]()))
+      } else {
+        None
+      }
     }
 
-    val calculatedResults = matchingLocations
-        .groupBy(_._2)
-        .map { case (region, locations) => Results(region, locations.map(_._1)) }
-        .toList
+    val calculatedResults = matchedRegions ++ emptyRegions
     assertEquals(calculatedResults, expectedResults)
   }
 }
