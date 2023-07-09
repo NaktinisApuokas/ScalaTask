@@ -1,11 +1,11 @@
 package example
 import scala.io.Source
-import upickle.default._
 import spray.json._
 import DefaultJsonProtocol._
 import java.io.FileWriter
 import org.json4s._
 import org.json4s.native.Serialization
+import java.io.FileNotFoundException
 
 case class Config(regionsFile: String = "", locationsFile: String = "")
 case class Location(name: String, coordinates: List[Double])
@@ -25,49 +25,62 @@ object InternshipTask {
 
       implicit val locationFormat: RootJsonFormat[Location] = jsonFormat2(Location)
       implicit val regionFormat: RootJsonFormat[Region] = jsonFormat2(Region)
-
-      val locationsJsonString = os.read(os.pwd/locationsPath)
-      var locationsData = locationsJsonString.stripMargin
-      val locations = locationsData.parseJson.convertTo[List[Location]]
-
-      val regionsJsonString = os.read(os.pwd/regionsPath)
-      var regionsData = regionsJsonString.stripMargin
-      val regions = regionsData.parseJson.convertTo[List[Region]]
-
-      val matchingRegions = regions.flatMap { region =>
-      locations.filter(isLocationInRegion(_, region)).map(location => (region.name, location.name))
-      } 
-
-      val matchedRegions = matchingRegions
-        .groupBy(_._1)
-        .map { case (region, locations) => Results(region, locations.map(_._2)) }
-        .toList
-
-      val emptyRegions = regions.flatMap { region =>
-        if (!matchingRegions.exists(_._1 == region.name)) {
-          Some(Results(region.name, List[String]()))
-        } else {
-          None
-        }
-      }
-
-      val finalResults = matchedRegions ++ emptyRegions
-
       implicit val formats: DefaultFormats.type = DefaultFormats
 
-      val json = Serialization.write(finalResults)
+      try{
+        val locationsFileContents = Source.fromFile(locationsPath).getLines.mkString
+        val regionsFileContents = Source.fromFile(regionsPath).getLines.mkString
+        if(locationsFileContents.isEmpty || regionsFileContents.isEmpty){
+          println("One of the input file is empty")
+          System.exit(1)
+        }
 
-      val wd = os.pwd/"results"
-      os.remove.all(wd)
-      os.makeDir.all(wd)
-      os.write(wd/resultsPath, json)
+        val locations = locationsFileContents.parseJson.convertTo[List[Location]]
+        val regions = regionsFileContents.parseJson.convertTo[List[Region]]
+
+        val matchingRegions = regions.flatMap { region =>
+        locations.filter(isLocationInRegion(_, region)).map(location => (region.name, location.name))
+        } 
+
+        val matchedRegions = matchingRegions
+          .groupBy(_._1)
+          .map { case (region, locations) => Results(region, locations.map(_._2)) }
+          .toList
+
+        val emptyRegions = regions.flatMap { region =>
+          if (!matchingRegions.exists(_._1 == region.name)) {
+            Some(Results(region.name, List[String]()))
+          } else {
+            None
+          }
+        }
+
+        val finalResults = matchedRegions ++ emptyRegions
+
+        val json = Serialization.write(finalResults)
+
+        val wd = os.pwd/"results"
+        os.remove.all(wd)
+        os.makeDir.all(wd)
+        os.write(wd/resultsPath, json)
+
+      } catch {
+      case _: FileNotFoundException =>
+        println("File not found. Please provide valid file paths.")
+        System.exit(1)
+      case _: DeserializationException =>
+        println("Error while parsing JSON. Please ensure the JSON files are correctly formatted.")
+        System.exit(1)
+      case ex: Exception =>
+        println(s"An error occurred: ${ex.getMessage}")
+        System.exit(1)
+      }
     }
     
     def isLocationInRegion(location: Location, region: Region): Boolean = {
       val point = location.coordinates
       val area = region.coordinates.head
 
-      println(area)
       var isInside = false
 
       for (i <- 0 until area.length) {
