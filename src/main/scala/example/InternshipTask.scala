@@ -34,18 +34,28 @@ object InternshipTask {
       var regionsData = regionsJsonString.stripMargin
       val regions = regionsData.parseJson.convertTo[List[Region]]
 
-      val matchingLocations = locations.flatMap { location =>
-        regions.find(isLocationInRegion(location, _)).map(region => (location.name, region.name))
+      val matchingRegions = regions.flatMap { region =>
+      locations.filter(isLocationInRegion(_, region)).map(location => (region.name, location.name))
+      } 
+
+      val matchedRegions = matchingRegions
+        .groupBy(_._1)
+        .map { case (region, locations) => Results(region, locations.map(_._2)) }
+        .toList
+
+      val emptyRegions = regions.flatMap { region =>
+        if (!matchingRegions.exists(_._1 == region.name)) {
+          Some(Results(region.name, List[String]()))
+        } else {
+          None
+        }
       }
 
-      val matchedRegions = matchingLocations
-          .groupBy(_._2)
-          .map { case (region, locations) => Results(region, locations.map(_._1)) }
-          .toList
+      val finalResults = matchedRegions ++ emptyRegions
 
       implicit val formats: DefaultFormats.type = DefaultFormats
 
-      val json = Serialization.write(matchedRegions)
+      val json = Serialization.write(finalResults)
 
       val wd = os.pwd/"results"
       os.remove.all(wd)

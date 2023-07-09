@@ -2141,3 +2141,285 @@ INFO: Schema "PUBLIC" is up to date. No migration necessary.
 2023.07.08 22:41:57 WARN  no build target for: C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\project\metals.sbt[0m
 liep. 08, 2023 10:43:44 POPIET org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+liep. 08, 2023 10:48:59 POPIET org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.07.08 22:53:42 WARN  no build target for: C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 22:54:35 WARN  no build target for: C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 22:54:38 WARN  no build target for: C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 22:54:48 INFO  Disconnecting from Bloop session...[0m
+2023.07.08 22:54:48 INFO  Shut down connection with build server.[0m
+2023.07.08 22:54:48 INFO  Shut down connection with build server.[0m
+2023.07.08 22:54:48 INFO  Attempting to connect to the build server...[0m
+2023.07.08 22:54:48 INFO  Bloop uses C:\Program Files\Java\jdk-16.0.1 defined at C:\Users\namek\.bloop\bloop.json[0m
+2023.07.08 22:54:48 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\.metals\bsp.trace.json or C:\Users\namek\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+2023.07.08 22:54:48 INFO  Attempting to connect to the build server...[0m
+2023.07.08 22:54:48 INFO  Bloop uses C:\Program Files\Java\jdk-16.0.1 defined at C:\Users\namek\.bloop\bloop.json[0m
+2023.07.08 22:54:48 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\project\.metals\bsp.trace.json or C:\Users\namek\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+2023.07.08 22:54:48 INFO  time: Connected to build server in 0.14s[0m
+2023.07.08 22:54:48 INFO  Connected to Build server: Bloop v1.5.6[0m
+2023.07.08 22:54:48 INFO  time: Imported build in 0.18s[0m
+2023.07.08 22:54:50 INFO  Disconnecting from Bloop session...[0m
+2023.07.08 22:54:50 INFO  Shut down connection with build server.[0m
+2023.07.08 22:54:50 INFO  Shut down connection with build server.[0m
+2023.07.08 22:54:50 INFO  Attempting to connect to the build server...[0m
+2023.07.08 22:54:50 INFO  Bloop uses C:\Program Files\Java\jdk-16.0.1 defined at C:\Users\namek\.bloop\bloop.json[0m
+2023.07.08 22:54:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\.metals\bsp.trace.json or C:\Users\namek\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+2023.07.08 22:54:50 INFO  Attempting to connect to the build server...[0m
+2023.07.08 22:54:50 INFO  Bloop uses C:\Program Files\Java\jdk-16.0.1 defined at C:\Users\namek\.bloop\bloop.json[0m
+2023.07.08 22:54:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\project\.metals\bsp.trace.json or C:\Users\namek\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+2023.07.08 22:54:50 INFO  time: Connected to build server in 0.15s[0m
+2023.07.08 22:54:50 INFO  Connected to Build server: Bloop v1.5.6[0m
+2023.07.08 22:54:50 INFO  time: Imported build in 0.17s[0m
+2023.07.08 22:54:54 INFO  time: indexed workspace in 5.14s[0m
+2023.07.08 22:54:54 WARN  no build target for: C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 22:54:56 INFO  time: indexed workspace in 5.66s[0m
+2023.07.08 22:54:56 WARN  no build target for: C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 22:54:59 INFO  time: code lens generation in 1.59s[0m
+2023.07.08 22:54:59 INFO  time: code lens generation in 1.6s[0m
+2023.07.08 22:55:13 INFO  running 'C:\Program Files\Java\jdk-16.0.1\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\namek\AppData\Local\Temp\metals3150182818583436446\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2023.07.08 22:55:18 INFO  [info] welcome to sbt 1.9.1 (Oracle Corporation Java 16.0.1)[0m
+2023.07.08 22:55:23 INFO  [info] loading settings for project scalatask-build-build from metals.sbt ...[0m
+2023.07.08 22:55:25 INFO  [info] loading project definition from C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\project\project[0m
+2023.07.08 22:55:31 INFO  [info] loading settings for project scalatask-build from metals.sbt ...[0m
+2023.07.08 22:55:31 INFO  [info] loading project definition from C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\project[0m
+2023.07.08 22:55:41 INFO  [success] Generated .bloop\scalatask-build.json[0m
+2023.07.08 22:55:41 INFO  [warn] Removed stale C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\project\.bloop\scala-seed-project-build.json[0m
+2023.07.08 22:55:41 INFO  [success] Total time: 10 s, completed 2023-07-08 22:55:41[0m
+2023.07.08 22:55:47 INFO  [info] loading settings for project root from build.sbt ...[0m
+2023.07.08 22:55:47 INFO  [info] set current project to Scala Seed Project (in build file:/C:/Users/namek/Desktop/scala/scala-seed-project/ScalaTask/)[0m
+2023.07.08 22:55:49 INFO  [success] Generated .bloop\root-test.json[0m
+2023.07.08 22:55:49 INFO  [success] Generated .bloop\root.json[0m
+2023.07.08 22:55:49 INFO  [success] Total time: 1 s, completed 2023-07-08 22:55:49[0m
+2023.07.08 22:55:49 INFO  time: ran 'sbt bloopInstall' in 35s[0m
+2023.07.08 22:55:49 INFO  Disconnecting from Bloop session...[0m
+2023.07.08 22:55:49 INFO  Shut down connection with build server.[0m
+2023.07.08 22:55:49 INFO  Shut down connection with build server.[0m
+2023.07.08 22:55:49 INFO  Attempting to connect to the build server...[0m
+2023.07.08 22:55:49 INFO  Bloop uses C:\Program Files\Java\jdk-16.0.1 defined at C:\Users\namek\.bloop\bloop.json[0m
+2023.07.08 22:55:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\.metals\bsp.trace.json or C:\Users\namek\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+2023.07.08 22:55:49 INFO  Attempting to connect to the build server...[0m
+2023.07.08 22:55:49 INFO  Bloop uses C:\Program Files\Java\jdk-16.0.1 defined at C:\Users\namek\.bloop\bloop.json[0m
+2023.07.08 22:55:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\project\.metals\bsp.trace.json or C:\Users\namek\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+2023.07.08 22:55:49 INFO  time: Connected to build server in 0.33s[0m
+2023.07.08 22:55:49 INFO  Connected to Build server: Bloop v1.5.6[0m
+2023.07.08 22:55:49 INFO  time: Imported build in 0.21s[0m
+2023.07.08 22:55:53 INFO  time: indexed workspace in 3.44s[0m
+2023.07.08 22:55:54 INFO  compiling root (1 scala source)[0m
+2023.07.08 22:56:08 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.08 22:56:08 INFO  compiling root-test (1 scala source)[0m
+2023.07.08 22:56:10 INFO  time: compiled root in 15s[0m
+2023.07.08 22:56:12 INFO  time: compiled root-test in 3.44s[0m
+2023.07.08 22:56:31 INFO  compiling scalatask-build (1 scala source)[0m
+2023.07.08 22:56:37 INFO  time: compiled scalatask-build in 6.12s[0m
+liep. 08, 2023 10:56:52 POPIET org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 159
+2023.07.08 22:58:12 INFO  compiling root (1 scala source)[0m
+2023.07.08 22:58:17 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.08 22:58:17 INFO  time: compiled root in 5.5s[0m
+liep. 08, 2023 10:58:22 POPIET org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Exception in thread "pool-6-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2023.07.08 22:59:35 INFO  compiling root (1 scala source)[0m
+2023.07.08 22:59:40 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.08 22:59:40 INFO  time: compiled root in 5.19s[0m
+2023.07.08 23:05:22 INFO  compiling root (1 scala source)[0m
+2023.07.08 23:05:22 INFO  time: compiled root in 0.97s[0m
+2023.07.08 23:05:35 INFO  compiling root (1 scala source)[0m
+2023.07.08 23:05:37 INFO  time: compiled root in 1.54s[0m
+2023.07.08 23:05:37 INFO  compiling root (1 scala source)[0m
+2023.07.08 23:05:41 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.08 23:05:41 INFO  time: compiled root in 3.69s[0m
+2023.07.08 23:05:42 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:43 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:44 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:44 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:44 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:47 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:47 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:47 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:47 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:48 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:48 INFO  compiling root (1 scala source)[0m
+2023.07.08 23:05:50 INFO  time: compiled root in 1.7s[0m
+2023.07.08 23:05:50 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:55 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:55 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:55 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:55 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:55 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:55 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+Exception in thread "pool-6-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+2023.07.08 23:05:55 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:55 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:55 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:55 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:56 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.08 23:05:56 INFO  compiling root (1 scala source)[0m
+2023.07.08 23:05:59 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.08 23:05:59 INFO  time: compiled root in 3.29s[0m
+2023.07.08 23:08:07 INFO  compiling root (1 scala source)[0m
+2023.07.08 23:08:07 INFO  Deduplicating compilation of root from bsp client 'Metals 0.11.12' (since 12m 17.572s)[0m
+liep. 08, 2023 11:08:07 POPIET org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 552
+2023.07.08 23:08:07 INFO  compiling root (1 scala source)[0m
+liep. 08, 2023 11:08:07 POPIET org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 553
+2023.07.08 23:08:13 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.08 23:08:13 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.08 23:08:13 INFO  time: compiled root in 6.89s[0m
+liep. 08, 2023 11:08:21 POPIET org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 561
+2023.07.08 23:08:34 INFO  compiling root (1 scala source)[0m
+2023.07.08 23:08:37 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.08 23:08:37 INFO  time: compiled root in 3.58s[0m
+Exception in thread "pool-6-thread-3" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+liep. 09, 2023 12:07:57 PRIEÐPIET org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 699
+2023.07.09 00:07:58 INFO  compiling root (1 scala source)[0m
+2023.07.09 00:08:02 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.09 00:08:02 INFO  time: compiled root in 4.05s[0m
+2023.07.09 00:09:50 INFO  compiling root (1 scala source)[0m
+2023.07.09 00:09:53 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.09 00:09:53 INFO  time: compiled root in 3.35s[0m
+2023.07.09 00:09:56 INFO  compiling root (1 scala source)[0m
+2023.07.09 00:09:56 INFO  time: compiled root in 0.62s[0m
+2023.07.09 00:10:02 INFO  file:///C:/Users/namek/Desktop/scala/scala-seed-project/ScalaTask/src/main/scala/example/InternshipTask.scala:50:18: stale bloop error: value _1 is not a member of Char
+        .groupBy(_._1)
+                 ^^^^[0m
+2023.07.09 00:10:02 INFO  file:///C:/Users/namek/Desktop/scala/scala-seed-project/ScalaTask/src/main/scala/example/InternshipTask.scala:51:52: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+        .map { case (region, locations) => Results(region, locations.map(_._2)) }
+                                                   ^^^^^^[0m
+2023.07.09 00:10:02 INFO  file:///C:/Users/namek/Desktop/scala/scala-seed-project/ScalaTask/src/main/scala/example/InternshipTask.scala:51:60: stale bloop error: value map is not a member of Any
+        .map { case (region, locations) => Results(region, locations.map(_._2)) }
+                                                           ^^^^^^^^^^^^^[0m
+2023.07.09 00:10:02 INFO  file:///C:/Users/namek/Desktop/scala/scala-seed-project/ScalaTask/src/main/scala/example/InternshipTask.scala:50:18: stale bloop error: value _1 is not a member of Char
+        .groupBy(_._1)
+                 ^^^^[0m
+2023.07.09 00:10:02 INFO  file:///C:/Users/namek/Desktop/scala/scala-seed-project/ScalaTask/src/main/scala/example/InternshipTask.scala:51:52: stale bloop error: type mismatch;
+ found   : Any
+ required: String
+        .map { case (region, locations) => Results(region, locations.map(_._2)) }
+                                                   ^^^^^^[0m
+2023.07.09 00:10:02 INFO  file:///C:/Users/namek/Desktop/scala/scala-seed-project/ScalaTask/src/main/scala/example/InternshipTask.scala:51:60: stale bloop error: value map is not a member of Any
+        .map { case (region, locations) => Results(region, locations.map(_._2)) }
+                                                           ^^^^^^^^^^^^^[0m
+2023.07.09 00:10:05 INFO  compiling root (1 scala source)[0m
+2023.07.09 00:10:05 INFO  time: compiled root in 0.18s[0m
+2023.07.09 00:11:31 INFO  compiling root (1 scala source)[0m
+2023.07.09 00:11:31 INFO  time: compiled root in 0.42s[0m
+2023.07.09 00:11:36 WARN  Using indexes to guess the definition of temp[0m
+2023.07.09 00:11:36 INFO  compiling root (1 scala source)[0m
+2023.07.09 00:11:38 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.09 00:11:38 INFO  time: compiled root in 2.04s[0m
+2023.07.09 00:34:45 INFO  Shutting down server[0m
+2023.07.09 00:34:45 INFO  shutting down Metals[0m
+2023.07.09 00:34:45 INFO  Shut down connection with build server.[0m
+2023.07.09 00:34:45 INFO  Shut down connection with build server.[0m
+2023.07.09 00:34:45 INFO  Exiting server[0m
+2023.07.09 15:53:59 INFO  Started: Metals version 0.11.12 in workspace 'C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask' for client Visual Studio Code 1.80.0.[0m
+liep. 09, 2023 3:53:59 POPIET org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+liep. 09, 2023 3:53:59 POPIET org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+liep. 09, 2023 3:53:59 POPIET org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+liep. 09, 2023 3:54:00 POPIET org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\.metals\metals (H2 2.1)
+liep. 09, 2023 3:54:00 POPIET org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.070s)
+liep. 09, 2023 3:54:00 POPIET org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+liep. 09, 2023 3:54:00 POPIET org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.07.09 15:54:00 INFO  time: initialize in 1.69s[0m
+2023.07.09 15:54:05 INFO  Attempting to connect to the build server...[0m
+2023.07.09 15:54:05 INFO  Bloop uses C:\Program Files\Java\jdk-16.0.1 defined at C:\Users\namek\.bloop\bloop.json[0m
+2023.07.09 15:54:05 INFO  skipping build import with status 'Installed'[0m
+2023.07.09 15:54:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\.metals\bsp.trace.json or C:\Users\namek\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+2023.07.09 15:54:14 INFO  Attempting to connect to the build server...[0m
+2023.07.09 15:54:14 INFO  Bloop uses C:\Program Files\Java\jdk-16.0.1 defined at C:\Users\namek\.bloop\bloop.json[0m
+2023.07.09 15:54:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\project\.metals\bsp.trace.json or C:\Users\namek\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+2023.07.09 15:54:14 INFO  time: Connected to build server in 10s[0m
+2023.07.09 15:54:14 INFO  Connected to Build server: Bloop v1.5.6[0m
+2023.07.09 15:54:16 INFO  time: Imported build in 0.72s[0m
+2023.07.09 15:54:27 INFO  time: indexed workspace in 10s[0m
+liep. 09, 2023 4:09:20 POPIET org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 33
+2023.07.09 16:09:25 INFO  compiling root (1 scala source)[0m
+liep. 09, 2023 4:09:30 POPIET org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.07.09 16:09:38 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.09 16:09:38 INFO  time: compiled root in 13s[0m
+liep. 09, 2023 4:14:00 POPIET org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 107
+2023.07.09 16:14:02 INFO  compiling root (1 scala source)[0m
+liep. 09, 2023 4:14:07 POPIET org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.07.09 16:14:09 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.09 16:14:09 INFO  time: compiled root in 8.15s[0m
+2023.07.09 16:14:19 INFO  compiling root (1 scala source)[0m
+2023.07.09 16:14:25 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.09 16:14:25 INFO  time: compiled root in 5.91s[0m
+2023.07.09 16:17:35 INFO  compiling root (1 scala source)[0m
+2023.07.09 16:17:39 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.09 16:17:39 INFO  time: compiled root in 4.23s[0m
+liep. 09, 2023 4:18:34 POPIET org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 264
+2023.07.09 16:18:35 INFO  compiling root (1 scala source)[0m
+2023.07.09 16:18:38 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.09 16:18:38 INFO  time: compiled root in 3.41s[0m
+2023.07.09 16:19:49 INFO  compiling root (1 scala source)[0m
+2023.07.09 16:19:49 INFO  time: compiled root in 0.93s[0m
+2023.07.09 16:20:08 INFO  compiling root (1 scala source)[0m
+2023.07.09 16:20:13 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.09 16:20:13 INFO  time: compiled root in 5.78s[0m
+2023.07.09 16:20:16 INFO  compiling root (1 scala source)[0m
+2023.07.09 16:20:19 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.09 16:20:19 INFO  time: compiled root in 2.42s[0m
+2023.07.09 16:20:31 INFO  compiling root (1 scala source)[0m
+2023.07.09 16:20:31 INFO  time: compiled root in 0.18s[0m
+2023.07.09 16:20:33 INFO  compiling root (1 scala source)[0m
+2023.07.09 16:20:33 INFO  time: compiled root in 0.89s[0m
+2023.07.09 16:20:38 INFO  compiling root (1 scala source)[0m
+2023.07.09 16:20:40 INFO  time: compiled root in 1.28s[0m
+2023.07.09 16:20:50 INFO  compiling root (1 scala source)[0m
+2023.07.09 16:20:52 INFO  time: compiled root in 1.42s[0m
+liep. 09, 2023 4:20:52 POPIET scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+liep. 09, 2023 4:22:48 POPIET org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 471
+2023.07.09 16:22:53 INFO  compiling root (1 scala source)[0m
+liep. 09, 2023 4:22:55 POPIET org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 497
+2023.07.09 16:22:56 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.09 16:22:56 INFO  time: compiled root in 3.32s[0m
+2023.07.09 16:23:18 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+2023.07.09 16:23:18 WARN  Could not load snapshot text for C:\Users\namek\Desktop\scala\scala-seed-project\ScalaTask\src\main\scala\example\InternshipTask.scala[0m
+liep. 09, 2023 4:23:18 POPIET org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 508
+2023.07.09 16:23:18 INFO  compiling root (1 scala source)[0m
+2023.07.09 16:23:21 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.09 16:23:21 INFO  time: compiled root in 2.68s[0m
+2023.07.09 16:24:07 INFO  compiling root (1 scala source)[0m
+2023.07.09 16:24:09 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
+2023.07.09 16:24:09 INFO  time: compiled root in 2.9s[0m

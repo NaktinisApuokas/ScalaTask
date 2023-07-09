@@ -2,14 +2,14 @@
     "version": "1.4.0",
     "project": {
         "name": "root",
-        "directory": "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project",
-        "workspaceDir": "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project",
+        "directory": "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\ScalaTask",
+        "workspaceDir": "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\ScalaTask",
         "sources": [
-            "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\src\\main\\scala",
-            "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\src\\main\\scala-2.13",
-            "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\src\\main\\scala-2",
-            "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\src\\main\\java",
-            "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\target\\scala-2.13\\src_managed\\main"
+            "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\ScalaTask\\src\\main\\scala",
+            "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\ScalaTask\\src\\main\\scala-2.13",
+            "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\ScalaTask\\src\\main\\scala-2",
+            "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\ScalaTask\\src\\main\\java",
+            "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\ScalaTask\\target\\scala-2.13\\src_managed\\main"
         ],
         "dependencies": [
             
@@ -30,11 +30,11 @@
             "C:\\Users\\namek\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\json4s\\json4s-scalap_2.13\\3.6.12\\json4s-scalap_2.13-3.6.12.jar",
             "C:\\Users\\namek\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8.jar"
         ],
-        "out": "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\.bloop\\root",
-        "classesDir": "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\.bloop\\root\\scala-2.13\\classes",
+        "out": "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\ScalaTask\\.bloop\\root",
+        "classesDir": "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\ScalaTask\\.bloop\\root\\scala-2.13\\classes",
         "resources": [
-            "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\src\\main\\resources",
-            "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\target\\scala-2.13\\resource_managed\\main"
+            "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\ScalaTask\\src\\main\\resources",
+            "C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\ScalaTask\\target\\scala-2.13\\resource_managed\\main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -129,7 +129,7 @@
             "config": {
                 "home": "C:\\Program Files\\Java\\jdk-16.0.1",
                 "options": [
-                    "-Duser.dir=C:\\Users\\namek\\Desktop\\scala\\scala-seed-project"
+                    "-Duser.dir=C:\\Users\\namek\\Desktop\\scala\\scala-seed-project\\ScalaTask"
                 ]
             },
             "mainClass": [
