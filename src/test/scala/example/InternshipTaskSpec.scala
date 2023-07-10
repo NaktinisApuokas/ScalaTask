@@ -9,15 +9,15 @@ import java.io.FileNotFoundException
 
 class InternshipTaskSpec extends munit.FunSuite {
   test("correctly determine if a location is inside a region") {
-    val location = Location("location1", List(25.2105, 54.6405))
-    val region = Region("region1", List(List(List(25.1357, 54.6792), List(25.1561, 54.5847), List(25.2866, 54.5942), List(25.4294, 54.6461), List(25.36416, 54.7710), List(25.1357, 54.7710), List(25.1357, 54.6792))))
+    val location = Location("location1", (25.2105, 54.6405))
+    val region = Region("region1", List(List((25.1357, 54.6792),(25.1561, 54.5847), (25.2866, 54.5942), (25.4294, 54.6461), (25.36416, 54.7710), (25.1357, 54.7710), (25.1357, 54.6792))))
 
     assertEquals(InternshipTask.isLocationInRegion(location, region), true)
   }
 
   test("correctly determine if a location is not inside a region") {
-    val location = Location("location1", List(26.2105, 54.6405))
-    val region = Region("region1", List(List(List(25.1357, 54.6792), List(25.1561, 54.5847), List(25.2866, 54.5942), List(25.4294, 54.6461), List(25.36416, 54.7710), List(25.1357, 54.7710), List(25.1357, 54.6792))))
+    val location = Location("location1", (26.2105, 54.6405))
+    val region = Region("region1", List(List((25.1357, 54.6792), (25.1561, 54.5847), (25.2866, 54.5942), (25.4294, 54.6461), (25.36416, 54.7710), (25.1357, 54.7710), (25.1357, 54.6792))))
     
     assertEquals(InternshipTask.isLocationInRegion(location, region), true)
   }
@@ -63,17 +63,17 @@ class InternshipTaskSpec extends munit.FunSuite {
 
   test("produce correct results when matching locations with regions") {
     val locations = List(
-      Location("location1", List(25.2105, 54.6405)),
-      Location("location2", List(25.2177, 54.6989)),
-      Location("location3", List(23.8525, 54.8713)),
-      Location("location4", List(23.9822, 54.8505)),
-      Location("location5", List(24.0182, 54.9023)),
-      Location("location6", List(24.4767, 55.1581))
+      Location("location1", (25.2105, 54.6405)),
+      Location("location2", (25.2177, 54.6989)),
+      Location("location3", (23.8525, 54.8713)),
+      Location("location4", (23.9822, 54.8505)),
+      Location("location5", (24.0182, 54.9023)),
+      Location("location6", (24.4767, 55.1581))
     )
     val regions = List(
-      Region("region1", List(List(List(25.1357, 54.6792), List(25.1561, 54.5847), List(25.2866, 54.5942), List(25.4294, 54.6461), List(25.36411, 54.7710), List(25.1357, 54.77102), List(25.1357, 54.6792)))),
-      Region("region2", List(List(List(23.7284, 54.8580), List(23.8345, 54.8157), List(24.0262, 54.8157), List(24.0711, 54.8721), List(24.0425, 54.9846), List(23.7284, 54.9846), List(23.7284, 54.8580)))),
-      Region("region3", List(List(List(21.0990, 55.6973), List(21.1316, 55.6397), List(21.2336, 55.6766), List(21.2010, 55.7410), List(21.1357, 55.8006), List(21.0990, 55.6973)), List(List(21.1007, 55.6445), List(21.0855, 55.4883), List(20.9763, 55.3074), List(21.0491, 55.3195), List(21.1159, 55.4952), List(21.1310, 55.6308), List(21.1007, 55.6445))))
+      Region("region1", List(List((25.1357, 54.6792), (25.1561, 54.5847), (25.2866, 54.5942), (25.4294, 54.6461), (25.36411, 54.7710), (25.1357, 54.77102), (25.1357, 54.6792)))),
+      Region("region2", List(List((23.7284, 54.8580), (23.8345, 54.8157), (24.0262, 54.8157), (24.0711, 54.8721), (24.0425, 54.9846), (23.7284, 54.9846), (23.7284, 54.8580)))),
+      Region("region3", List(List((21.0990, 55.6973), (21.1316, 55.6397), (21.2336, 55.6766), (21.2010, 55.7410), (21.1357, 55.8006), (21.0990, 55.6973)), List((21.1007, 55.6445), (21.0855, 55.4883), (20.9763, 55.3074), (21.0491, 55.3195), (21.1159, 55.4952), (21.1310, 55.6308), (21.1007, 55.6445))))
     )
     val expectedResults = List(
       Results("region1", List("location1", "location2")),

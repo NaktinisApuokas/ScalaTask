@@ -8,8 +8,8 @@ import org.json4s.native.Serialization
 import java.io.FileNotFoundException
 
 case class Config(regionsFile: String = "", locationsFile: String = "")
-case class Location(name: String, coordinates: List[Double])
-case class Region(name: String, coordinates: List[List[List[Double]]])
+case class Location(name: String, coordinates: (Double, Double))
+case class Region(name: String, coordinates: List[List[(Double, Double)]])
 case class Results(region: String, matchedLocations: List[String])
 
 object InternshipTask {
@@ -86,13 +86,13 @@ object InternshipTask {
       for (i <- 0 until area.length) {
         val j = if (i == 0) area.length - 1 else i - 1
 
-        val xi = area(i)(0)
-        val yi = area(i)(1)
-        val xj = area(j)(0)
-        val yj = area(j)(1)
+        val xi = area(i)._1
+        val yi = area(i)._2
+        val xj = area(j)._1
+        val yj = area(j)._2
 
-        if (((yi > point(1)) != (yj > point(1))) 
-        && (point.head < (xj - xi) * (point(1) - yi) / (yj - yi) + xi)) {
+        if (((yi > point._2) != (yj > point._2)) 
+        && (point._1 < (xj - xi) * (point._2 - yi) / (yj - yi) + xi)) {
           isInside = !isInside
         }
       }
